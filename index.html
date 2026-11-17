@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="es" data-theme="champagne">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#F4E9E1"><meta name="description" content="RÉVI Jewelry Collection — piezas especiales para acompañar tu historia.">
+  <title>RÉVI — Jewelry Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Envíos a todo el país <span>·</span> Entrega en 2–3 días en productos en stock</div>
+  <header class="site-header">
+    <button class="menu-toggle icon-button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <a class="brand" href="#inicio" aria-label="RÉVI, inicio"><span>RÉVI<sup>✦</sup></span><small>JEWELRY COLLECTION</small></a>
+    <nav class="main-nav" aria-label="Navegación principal"><a href="#coleccion">Colección</a><a href="#pedido">Bajo pedido</a><a href="#nosotras">Nosotras</a><a href="#contacto">Contacto</a></nav>
+    <button class="cart-trigger icon-button" aria-label="Abrir carrito">♧ <span class="cart-count">0</span></button>
+  </header>
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy"><p class="eyebrow">DETALLES QUE PERDURAN</p><h1>Joyas que cuentan <em>tu historia</em></h1><p class="lead">Piezas elegidas con intención, para acompañarte hoy y siempre.</p><div class="hero-actions"><a class="button primary" href="#coleccion">Ver colección</a><a class="button outline" href="#pedido">Pedidos especiales</a></div><p class="hero-note">Diseñado para regalarte un momento.</p></div>
+      <!-- Cada lámina es una propuesta de arte temporal. Sustituye las formas por fotos cuando estén listas. -->
+      <section class="hero-art art-carousel" aria-label="Ideas visuales para la imagen principal" aria-roledescription="carrusel">
+        <div class="art-stage" tabindex="0">
+          <div class="art-slide active" data-slide="0" role="group" aria-roledescription="diapositiva" aria-label="1 de 3: Collar esencial">
+            <div class="art-necklace" aria-hidden="true"><i></i></div><span class="art-spark" aria-hidden="true">✦</span><p class="art-caption">01 <span>·</span> Collar esencial</p>
+          </div>
+          <div class="art-slide" data-slide="1" role="group" aria-roledescription="diapositiva" aria-label="2 de 3: Aros escultóricos" hidden>
+            <div class="art-earrings" aria-hidden="true"><i></i><i></i></div><span class="art-spark" aria-hidden="true">✦</span><p class="art-caption">02 <span>·</span> Aros escultóricos</p>
+          </div>
+          <div class="art-slide" data-slide="2" role="group" aria-roledescription="diapositiva" aria-label="3 de 3: Anillos apilados" hidden>
+            <div class="art-rings" aria-hidden="true"><i></i><i></i><i></i></div><span class="art-spark" aria-hidden="true">✦</span><p class="art-caption">03 <span>·</span> Anillos apilados</p>
+          </div>
+        </div>
+        <div class="art-controls"><button class="art-arrow art-prev" aria-label="Idea anterior">←</button><div class="art-dots" role="group" aria-label="Elegir idea visual"><button aria-label="Mostrar collar esencial" aria-current="true"></button><button aria-label="Mostrar aros escultóricos" aria-current="false"></button><button aria-label="Mostrar anillos apilados" aria-current="false"></button></div><button class="art-arrow art-next" aria-label="Siguiente idea">→</button></div>
+      </section>
+    </section>
+    <section class="benefits section-wrap" aria-label="Beneficios"><div><b>✧</b><span>Entrega en 2–3 días</span></div><div><b>⌑</b><span>Pago seguro</span></div><div><b>♧</b><span>Empaque de regalo</span></div><div><b>☏</b><span>Atención por WhatsApp</span></div></section>
+    <section class="section-wrap categories" id="categorias"><div class="section-heading"><p class="eyebrow">ENCUENTRA TU FAVORITA</p><h2>Un detalle para cada día</h2></div><div class="category-grid">
+      <a href="#coleccion" class="category-card cat-1" data-category-link="Collares"><span>01</span><h3>Collares</h3><b>↗</b></a><a href="#coleccion" class="category-card cat-2" data-category-link="Aretes"><span>02</span><h3>Aretes</h3><b>↗</b></a><a href="#coleccion" class="category-card cat-3" data-category-link="Pulseras"><span>03</span><h3>Pulseras</h3><b>↗</b></a><a href="#coleccion" class="category-card cat-4" data-category-link="Anillos"><span>04</span><h3>Anillos</h3><b>↗</b></a><a href="#coleccion" class="category-card cat-5"><span>05</span><h3>Accesorios</h3><b>↗</b></a>
+    </div></section>
+    <section class="collection section-wrap" id="coleccion"><div class="collection-top"><div class="section-heading"><p class="eyebrow">PARA LLEVAR CONTIGO</p><h2>Entrega inmediata</h2><p>Piezas seleccionadas, listas para llegar a ti.</p></div><label class="filter-label">Categoría <select class="category-filter" aria-label="Filtrar entrega inmediata por categoría"><option value="all">Todas</option></select></label></div><div class="product-grid" id="stock-grid"></div></section>
+    <section class="made-to-order" id="pedido"><div class="section-wrap"><div class="collection-top"><div class="section-heading"><p class="eyebrow">HECHO PARA TI</p><h2>Bajo pedido</h2><p>Unos días de espera para encontrar esa pieza especial.</p></div><label class="filter-label">Categoría <select class="category-filter" data-filter="order" aria-label="Filtrar bajo pedido por categoría"><option value="all">Todas</option></select></label></div><div class="product-grid" id="order-grid"></div><p class="order-note"><span>✦</span> ¿Cómo funciona? Pagas, lo pedimos especialmente para ti y te avisamos cuando tengamos el seguimiento. Tiempo estimado: 7–15 días.</p></div></section>
+    <section class="about section-wrap" id="nosotras"><div class="about-mark" aria-hidden="true">R<span>✦</span></div><div class="about-copy"><p class="eyebrow">UN POCO DE NOSOTRAS</p><h2>Hecho con intención,<br><em>elegido para ti.</em></h2><p>RÉVI nace del amor por los pequeños detalles. Creamos una colección de joyas y accesorios para acompañar tus momentos cotidianos y celebrar todo lo que te hace única.</p><a href="#contacto" class="text-link">Conoce más sobre RÉVI <span>→</span></a></div></section>
+    <section class="social section-wrap"><div class="social-head"><div><p class="eyebrow">SIGAMOS CONECTADAS</p><h2>Un poquito de RÉVI</h2></div><a class="button outline" href="https://instagram.com/revi_essentials" target="_blank" rel="noreferrer">Síguenos en @revi_essentials ↗</a></div><div class="social-grid" aria-label="Galería de Instagram"><div class="social-tile tile-a" role="img" aria-label="Placeholder editorial para foto de joyería"></div><div class="social-tile tile-b" role="img" aria-label="Placeholder editorial para foto de joyería"></div><div class="social-tile tile-c" role="img" aria-label="Placeholder editorial para foto de joyería"></div><div class="social-tile tile-d" role="img" aria-label="Placeholder editorial para foto de joyería"></div><div class="social-tile tile-e" role="img" aria-label="Placeholder editorial para foto de joyería"></div><div class="social-tile tile-f" role="img" aria-label="Placeholder editorial para foto de joyería"></div></div></section>
+    <section class="newsletter"><div class="section-wrap newsletter-inner"><div><p class="eyebrow">NOTAS DE RÉVI</p><h2>Un detalle bonito<br>en tu bandeja.</h2></div><form class="newsletter-form"><label for="email">Déjanos tu correo para recibir novedades</label><div><input id="email" type="email" placeholder="Tu correo electrónico" required><button class="button primary" type="submit">Suscribirme</button></div><small>Al suscribirte aceptas recibir noticias de RÉVI.</small></form></div></section>
+  </main>
+  <footer id="contacto"><div class="section-wrap footer-main"><div class="footer-brand"><a class="brand" href="#inicio"><span>RÉVI<sup>✦</sup></span><small>JEWELRY COLLECTION</small></a><p>Joyas para contar tu historia.</p></div><div><h3>Explora</h3><a href="#coleccion">Colección</a><a href="#pedido">Bajo pedido</a><a href="#nosotras">Nosotras</a></div><div><h3>Ayuda</h3><a href="#contacto">Envíos</a><a href="#contacto">Cambios y devoluciones</a><a href="#contacto">Privacidad</a></div><div><h3>Conversemos</h3><a href="https://instagram.com/revi_essentials">Instagram ↗</a><a href="https://wa.me/">WhatsApp</a><p class="payment-icons" aria-label="Métodos de pago">VISA <span>MC</span> Yape</p></div></div><div class="section-wrap footer-bottom"><span>© 2026 RÉVI Jewelry Collection</span><span>Hecho con ✦</span></div></footer>
+  <aside class="palette-picker" aria-label="Selector de paleta"><button class="palette-toggle" aria-expanded="false">Paleta <span>＋</span></button><div class="palette-options" hidden></div></aside>
+  <div class="scrim" hidden></div><aside class="cart-drawer" aria-label="Tu carrito" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Tu carrito</h2></div><button class="icon-button close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items"></div><div class="cart-footer"><p class="delivery-warning" hidden>Tu pedido se enviará en dos entregas</p><div class="subtotal"><span>Subtotal</span><strong>S/ 0.00</strong></div><button class="button primary checkout">Finalizar compra</button><p>Envío calculado al finalizar la compra.</p></div></aside>
+  <dialog class="quick-modal" aria-label="Vista rápida"><button class="modal-close icon-button" aria-label="Cerrar">×</button><div class="quick-content"></div></dialog>
+  <dialog class="notice-modal"><button class="modal-close icon-button" aria-label="Cerrar">×</button><p class="eyebrow">RÉVI · CHECKOUT</p><h2>Aquí se conectará la pasarela de pagos</h2><p>Esta es una maqueta visual. Tu compra no será procesada.</p><button class="button primary notice-ok">Entendido</button></dialog>
+  <script src="products.js"></script><script src="app.js"></script>
+</body></html>
